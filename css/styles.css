@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #e8dcc4;
+  color: #29231f;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 3rem 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
+header,
+footer {
+  background: #29231f;
+  color: #e8dcc4;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  padding: 1rem 4rem;
+}
+
+.div-logo {
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.logo,
+.header-nav a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: inherit;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.logo img {
+  width: 5rem;
+  display: block;
+}
+
+.header-nav {
+  margin-right: 2rem;
+}
+
+.header-nav ul,
+footer .footer-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-list li {
+  padding: 1rem;
+}
+
+.footer-list img {
+  width: 5rem;
+  padding: 0.5rem;
+}
+
+/*------------------------------ COLORES ------------------------------ */
+
+.bg-primary {
+  background-color: #e8dcc4;
+}
+
+.bg-secondary {
+  background-color: #29231f;
+}
+
+.text-light {
+  color: #e8dcc4;
+}
+
+.text-dark {
+  color: #29231f;
+}
+
+.text-secondary {
+  color: #29231f;
+}
+
+.btn.text-dark {
+  color: #e8dcc4;
+}
+
+/*------------------------------ HOME ------------------------------ */
+
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inicio h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.parrafo {
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  /* Para que se acomoden los hijos abajo si no tienen espacio */
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #d8c9aa;
+  color: #29231f;
+  width: 40rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card img {
+  width: 100%;
+  height: 30rem;
+  object-fit: contain;
+}
+
+/*------------------------------  CONTACTO  ------------------------------ */
+
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-contacto {
+  margin: 2rem 0;
+}
+
+.form-contacto {
+  background-color: #d8c9aa;
+  color: #29231f;
+
+  width: 100%;
+  max-width: 50rem;
+
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* sutil */
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+
+  color: #29231f;
+  background-color: #e8dcc4;
+
+  border: 2px solid #29231f;
+  border-radius: 0.8rem;
+
+  outline: none;
+}
+
+.grupo-input textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+/*------------------------------ MEDIA QUERIES ------------------------------ */
+
+@media (max-width: 600px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
+
+  .header-nav,
+  .div-logo {
+    margin: 0;
+  }
+}
